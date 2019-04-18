@@ -79,6 +79,7 @@ footer li{
 .hero-image{
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     width: 100%;
     margin-bottom: 50px;
 }
