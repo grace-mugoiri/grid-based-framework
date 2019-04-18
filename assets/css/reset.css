@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    font-family: 'Roboto Condensed', serif;
 }
 ol, ul {
 	list-style: none;
@@ -46,4 +47,40 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.grid-item{
+    display: grid;
+}
+
+.grid-item img{
+    height: 150px;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+footer{
+    margin: 0px;
+}
+
+footer li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+.container{
+    margin-top: 30px;
+}
+
+.fab{
+    font-size: 25px;
+}
+
+.hero-image{
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
 /* End of reset */
