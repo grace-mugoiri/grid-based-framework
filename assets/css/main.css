@@ -1,15 +1,24 @@
 @import url(reset.css);
 .row {
-  display: grid; }
+  display: grid; 
+  grid-template-columns: repeat(3, 30%);
+  grid-gap: 0.5rem;
+
+}
 
 .col-1 {
-  grid-template-columns: 1; }
+  grid-template-columns: 1; 
+  
+}
 
 .col-2 {
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  
+}
 
 .col-3 {
-  grid-template-columns: repeat(3, 1fr); }
+   grid-template-columns: repeat(3, 30%);  
+}
 
 .col-4 {
   grid-template-columns: repeat(4, 1fr); }
@@ -18,7 +27,8 @@
   grid-template-columns: repeat(5, 1fr); }
 
 .col-6 {
-  grid-template-columns: repeat(6, 1fr); }
+  grid-template-columns: repeat(6, 30%); 
+ }
 
 .col-7 {
   grid-template-columns: repeat(7, 1fr); }
@@ -106,10 +116,13 @@ input i{
 
 .container {
   display: grid;
-  text-transform: uppercase; }
+  text-transform: uppercase; 
+}
 
 .main-logo {
-  background-color: blue; }
+  background-color: blue; 
+}
+
 
 @media (min-width: 576px) {
  }
