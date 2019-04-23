@@ -1,41 +1,123 @@
-@import "reset.css";
+@import url(reset.css);
+.row {
+  display: grid; }
 
+.col-1 {
+  grid-template-columns: 1; }
 
-body{
-    background-color: rgba(200, 200, 200, .54);
+.col-2 {
+  grid-template-columns: repeat(2, 1fr); }
+
+.col-3 {
+  grid-template-columns: repeat(3, 1fr); }
+
+.col-4 {
+  grid-template-columns: repeat(4, 1fr); }
+
+.col-5 {
+  grid-template-columns: repeat(5, 1fr); }
+
+.col-6 {
+  grid-template-columns: repeat(6, 1fr); }
+
+.col-7 {
+  grid-template-columns: repeat(7, 1fr); }
+
+.col-8 {
+  grid-template-columns: repeat(8, 1fr); }
+
+.col-9 {
+  grid-template-columns: repeat(9, 1fr); }
+
+.col-10 {
+  grid-template-columns: repeat(10, 1fr); }
+
+.col-11 {
+  grid-template-columns: repeat(11, 1fr); }
+
+.col-12 {
+  grid-template-columns: repeat(12, 1fr); }
+
+body {
+  font-family: 'Roboto Condensed'; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+h1, h2, h3 {
+  font-size: 10px; }
+
+a {
+  text-decoration: cyan; }
+
+a:hover {
+  color: black; }
+
+h1:hover {
+  color: yellowgreen; }
+
+li {
+  list-style: none;
+  text-align: left;
+  display: inline;
+  line-height: 2px; }
+
+p {
+  text-decoration: inherit;
+  font-weight: 100;
+  color: black; }
+
+.nav {
+  height: 50px;
+  width: 100%; 
+  background: #232A34;
+  color: #fff;
+  margin-bottom: -70px;
 }
 
-.hero-image{
-    background-image: url(../images/lambo.jpg);
-    height: 627px;
-    border-radius: 3px;
+.nav input{
+    background: rgba(255, 255, 255, .25);
+    border: none;
+    width: 434px;
+    padding: 8px;
 }
 
-h4{
-    color: black;
-    text-align: center;
-    font-weight: 100;
-    font-size: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+input i{
+    background: rgba(255, 255, 255, .25);
 }
 
-h4:hover{
-    color: red;
+.nav button{
+    background: #05A081;
+    border: none;
+    height: 40px;
+    color: #fff;
 }
 
-.bottom{
-    margin: 0 auto;
-    text-align: center;
-    background-color: lightgrey;
-    height: 100px;
-    margin-top: 50px;
+.main-hero{
+    background: url(../images/main-hero.jpeg) no-repeat center;
+    height: 500px;
 }
 
-.fab{
-    margin-top: 45px;
-}
+.container {
+  display: grid;
+  text-transform: uppercase; }
 
-li i:hover{
-    color: blue;
-}
+.main-logo {
+  background-color: blue; }
+
+@media (min-width: 576px) {
+ }
+@media (min-width: 768px) {
+  }
+@media (min-width: 992px) {
+  }
+@media (min-width: 1200px) {
+  }
+
+/*# sourceMappingURL=framework.css.map */
