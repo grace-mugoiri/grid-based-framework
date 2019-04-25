@@ -4,6 +4,7 @@
 .row {
   display: grid; 
   grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10rem;
 }
 
 .col-1 {
@@ -57,6 +58,12 @@ nav img{
   .col-12 {
     grid-column: span 12; }
 
+  .col-12 img{
+    grid-column: span 2;
+  }
+
+
+
 body {
   font-family: 'Roboto Condensed'; 
   margin: 0px;
@@ -107,14 +114,6 @@ li {
   line-height: 2px;
  }
 
-
-.right-top {
-  float: right;
-}
-.right-log {
-  float: right;
-}
-
 p {
   text-decoration: inherit;
   font-weight: 100;
@@ -130,9 +129,9 @@ p {
 }
 
 .input{
+    grid-column: span 2;
     background: lightgrey;
     border: none;
-    margin-left: 100px;
     padding: 5px;
     padding-top: 10px;
     border-radius: 1px;
@@ -141,7 +140,13 @@ p {
 .input input{
   background: lightgrey;
   border: none;
-  width: 900px;
+  width: 600px;
+  border-radius: 2px;
+}
+
+.signup{
+  background: #fff;
+  color: black;
   border-radius: 2px;
 }
 
