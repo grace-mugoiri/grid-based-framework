@@ -64,7 +64,7 @@ body {
 
 .main-container{
   background: url(../images/hero.jpg) no-repeat center;
-  height: 480px;
+  height: 700px;
 }
 
 .text-center {
@@ -88,6 +88,14 @@ h1, h2, h3 {
 .large-screen-list li{
   padding: 20px;
 }
+.large-screen-list li a {
+  color: whitesmoke;
+}
+.large-screen-list li a:hover{
+  color: grey;
+  text-decoration: none;
+}
+
 
 h1:hover {
   color: yellowgreen; }
@@ -96,7 +104,16 @@ li {
   list-style: none;
   text-align: center;
   display: inline;
-  line-height: 2px; }
+  line-height: 2px;
+ }
+
+
+.right-top {
+  float: right;
+}
+.right-log {
+  float: right;
+}
 
 p {
   text-decoration: inherit;
@@ -108,18 +125,24 @@ p {
   background: rgba(0, 0, 0, 0.568);
   color: #fff;
   margin-bottom: -70px;
+  opacity: 0.9;
+  padding-top: 10px;
 }
 
 .input{
-    background: rgba(255, 255, 255, .25);
+    background: lightgrey;
     border: none;
-    width: 600px;
+    margin-left: 100px;
     padding: 5px;
+    padding-top: 10px;
+    border-radius: 1px;
 }
 
 .input input{
-  background: rgba(255, 255, 255, .25);
+  background: lightgrey;
   border: none;
+  width: 900px;
+  border-radius: 2px;
 }
 
 input i{
@@ -131,6 +154,7 @@ input i{
     border: none;
     height: 30px;
     color: black;
+    border-radius: 2px;
 }
 
 .container {
@@ -292,5 +316,7 @@ input i{
   
     .col-lg-12 {
       grid-column: span 12; } }
+
+
 
 /*# sourceMappingURL=framework.css.map */
