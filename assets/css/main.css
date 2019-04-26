@@ -13,5 +13,67 @@ main img {
 @media (min-width: 992px) {
       
 }
+.topnav {
+  overflow: hidden;
+  background-image: url(/Users/gracemugoiri/Desktop/grid-based/grid-based-framework/assets/images/background-hero.jpeg);
+  height: 500px;
+  margin-bottom: 30px;
+}
+#pexels {
+  width: 50px;
+  height: 50px;
+}
+#pexels img:hover {
+  background-color: none;
+  
+}
+#small-pexels {
+  color: white;
+  font-weight: 400;
+}
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.nav-right {
+  float: right;
+}
+.centered {
+  position: relative;
+  top: 30%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+#search {
+  top: 30%;
+  left: 200px;
+  color: white;
+  width: 500px;
+}
+.nav-right a {
+  color: whitesmoke;
+}
+.nav-right a:hover {
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.button {
+  background-color: rgb(27, 167, 83);
+  border: none;
+  padding-top: 10px;
+  color: white;
+}
+
+
+
 
 /*# sourceMappingURL=framework.css.map */
