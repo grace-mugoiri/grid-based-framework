@@ -1,26 +1,30 @@
-.w-100{width:100%!important}
+@import 'reset.css';
+
 
 main img {
   cursor: pointer;
 }
 
-.mobile-5{margin-bottom:3rem!important}
-
-@media (min-width: 768px) {
-  
+.grid-img{
+  margin-bottom: 3rem!important;
 }
 
-@media (min-width: 992px) {
+.w-100{
+  width: 100%!important;
+}
     
-}
+
 @media (max-width: 480px) {
-  .centered, .nav-right, .centered {
+  .nav-right, .centered{
     display: none;
+  }
+  .centered{
+    text-align: center;
   }
 }
 .topnav {
   overflow: hidden;
-  background-image: url(/Users/gracemugoiri/Desktop/grid-based/grid-based-framework/assets/images/background-hero.jpeg);
+  background-image: url(../images/background-hero.jpeg);
   height: 500px;
   margin-bottom: 30px;
 }
@@ -45,7 +49,7 @@ main img {
 }
 .centered {
   position: relative;
-  top: 30%;
+  top: 45%;
   left: 80%;
   transform: translate(-50%, -50%);
   color: white;
@@ -79,8 +83,6 @@ main img {
   color: white;
   border-radius: 2px;
 }
-
-
 
 
 /*# sourceMappingURL=framework.css.map */
