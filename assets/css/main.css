@@ -7,11 +7,17 @@ main img {
 .mobile-5{margin-bottom:3rem!important}
 
 @media (min-width: 768px) {
-
+  
 }
 
 @media (min-width: 992px) {
-      
+    
+}
+@media (max-width: 480px) {
+  .centered {
+    display: none;
+  }
+
 }
 .topnav {
   overflow: hidden;
@@ -20,17 +26,15 @@ main img {
   margin-bottom: 30px;
 }
 #pexels {
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
 }
 #pexels img:hover {
   background-color: none;
   
 }
-#small-pexels {
-  color: white;
-  font-weight: 400;
-}
+
 .topnav a {
   float: left;
   text-align: center;
@@ -52,11 +56,19 @@ main img {
   transform: translate(-50%, -50%);
   color: white;
 }
+.centered input {
+  height: 50px;
+  border: none;
+  border-radius: 2px;
+}
 #search {
-  top: 30%;
-  left: 200px;
-  color: white;
+  color: whitesmoke;
   width: 500px;
+  margin-left: 5%;
+  text-align: center;
+}
+#suggest {
+  margin-left: 5%;
 }
 .nav-right a {
   color: whitesmoke;
@@ -71,6 +83,7 @@ main img {
   border: none;
   padding-top: 10px;
   color: white;
+  border-radius: 2px;
 }
 
 
