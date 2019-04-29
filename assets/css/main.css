@@ -43,13 +43,11 @@ nav a:hover {
   display: grid;
 }
 
-.col-2{
+.col-6{
   grid-column: span 6;
-  grid-column-start: 2;
-  grid-column-end: 8;
-  text-align: center;
 }
-.col-2 p {
+
+.col-6 p {
   color: red;
 }
 h1{
@@ -67,7 +65,7 @@ h3 {
   color: red;
 }
 
-.col-3{
+.col-img{
   grid-column: span 6;
   grid-column-start: 8;
   grid-column-end: 12;
@@ -89,7 +87,7 @@ h3 {
 .feedback img{
   height: 200px;
 }
-.span-1{
+.col-1{
   grid-column: span 3;
   text-align: center;
   background: #fffefeb6;
@@ -97,33 +95,19 @@ h3 {
   line-height: 5;
 }
 
-.col-4{
-  grid-column: span 6;
-  background: red;
-}
 
-.col-5{
-  grid-column: span 6;
-  background: rgba(167, 168, 168, 0.048);
-  text-align: center;
-}
-
-.col-7,
 .col-6{
   grid-column: span 6;
   text-align: center;
-  height: 250px;
+  height: 300px;
 }
 
 .col-6:hover{
   background: rgba(133, 135, 136, 0.102);
 }
 
-.col-7:hover{
-  background: rgba(133, 135, 136, 0.102);
-}
 
-.col-7 h2 {
+.col-6 h2 {
   color:#7c4d9e;
   font-size: 30px;
 }
@@ -133,23 +117,26 @@ h3 {
   grid-template-columns: repeat(12, 1fr);
 }
 
-.col-left,
-.col-right{
-  grid-column: span 6;
-  text-align: center;
-  height: 300px;
-}
 
-.col-left h3{
+.col-6 h3{
   margin-top: 30px;
 }
 
-.col-left:hover{
-  background: rgba(133, 135, 136, 0.102);
+
+.mifi-col img{
+  height: 150px;
 }
 
-.col-right:hover{
-  background: rgba(133, 135, 136, 0.102);
+.red-bg{
+  background: red;
+}
+
+.red-bg:hover{
+  background: red;
+}
+
+.hero-txt:hover{
+  background: #fff;
 }
 
 /* tv on the go */
@@ -163,9 +150,9 @@ h3 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-.tick-off {
+.col-12 {
   text-align: center;
-  grid-template-columns: repeat(1, 1fr);
+  grid-column: span 12;
   height: 150px;
   background: rgba(226, 227, 228, 0.102);
 }
@@ -199,16 +186,13 @@ footer span{
   font-weight: bold;
 }
 
-.footer-one{
+.col-2{
   grid-column: span 2;
   margin-left: 5px;
 }
 
-.footer-two{
-  grid-column: span 6;
-}
 
-.footer-two li{
+.col-6 li{
   display: inline;
   padding-top: 40px;
 }
@@ -258,17 +242,11 @@ footer span{
 
 
 @media only screen and (max-width: 963px){
-
-  .col-2 img,
-  .col-3 img,
-  .col-5 img,
-  .col-6 img,
-  .col-7 img{
-    width: 100%;
+  .col-6 img{
     grid-column: span 12;
   }
 
-  .span-1{
+  .col-1{
     grid-column: span 12;
     background: rgba(243, 241, 241, 0.637);
     margin-top: 20px;
@@ -289,7 +267,7 @@ footer span{
     grid-column: span 12;
   }
 
-  .col-3 img{
+  .col-img img{
     display: none;
   }
 
