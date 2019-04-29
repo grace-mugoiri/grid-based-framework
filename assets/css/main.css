@@ -1,88 +1,92 @@
 @import 'reset.css';
 
 
-main img {
-  cursor: pointer;
-}
-
-.grid-img{
-  margin-bottom: 3rem!important;
-}
-
-.w-100{
-  width: 100%!important;
-}
-    
-
-@media (max-width: 480px) {
-  .nav-right, .centered{
-    display: none;
-  }
-  .centered{
-    text-align: center;
-  }
-}
-.topnav {
-  overflow: hidden;
-  background-image: url(../images/background-hero.jpeg);
-  height: 500px;
-  margin-bottom: 30px;
-}
-#pexels {
-  width: 32px;
-  height: 32px;
-  border-radius: 3px;
-}
-#pex:hover {
-  text-decoration-color: none;
-  
-}
-.topnav a {
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.nav-right {
-  float: right;
-}
-.centered {
-  position: relative;
-  top: 45%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-.centered input {
+nav{
+  border-bottom: 1px solid lightgray;
   height: 50px;
-  border: none;
-  border-radius: 2px;
-}
-#search {
-  color: whitesmoke;
-  width: 500px;
-  margin-left: 5%;
   text-align: center;
 }
-#suggest {
-  margin-left: 5%;
-}
-.nav-right a {
-  color: whitesmoke;
-}
-.nav-right a:hover {
-  color: whitesmoke;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.button {
-  background-color: #05a081;
-  border: none;
-  height: 32px;
-  color: white;
-  border-radius: 2px;
+
+nav li{
+  display: inline;
+  list-style: none;
+  padding: 20px;
 }
 
+nav a{
+  text-decoration: none;
+  color: #000;
+}
+
+.hero{
+  display: grid;
+}
+
+.col-2{
+  grid-column: span 6;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  text-align: center;
+}
+
+.col-3{
+  grid-column: span 6;
+  grid-column-start: 8;
+  grid-column-end: 12;
+  text-align: center;
+}
+
+/* FEATURES */
+.features{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.feedback{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.feedback img{
+  height: 200px;
+}
+.span-1{
+  grid-column: span 2;
+  text-align: center;
+}
+
+.col-4{
+  grid-column: span 6;
+  /* grid-column-start: 2;
+  grid-column-end: 8; */
+  background: red;
+}
+
+.col-5{
+  grid-column: span 6;
+  grid-column-start: 8;
+  grid-column-end: 12;
+}
+
+.col-7,
+.col-6{
+  grid-column: span 6;
+  text-align: center;
+}
+
+.four-g-upgrade{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.col-left{
+  grid-column: span 6;
+  text-align: center;
+}
+
+.col-right{
+  grid-column: span 6;
+  text-align: center;
+}
 
 /*# sourceMappingURL=framework.css.map */
