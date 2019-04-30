@@ -11,6 +11,9 @@
 
 This project is entirely created using HTML and CSS.
 
+# Framework used
+https://github.com/whiz25/css-framework/tree/develop
+
 # Github pages
 [Here](https://grace-mugoiri.github.io/grid-based-framework/)
 
