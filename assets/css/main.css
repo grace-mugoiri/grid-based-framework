@@ -45,6 +45,12 @@ nav a:hover {
 
 .col-6{
   grid-column: span 6;
+  text-align: center;
+}
+
+.col-6 li{
+  color: red;
+  margin: 20px;
 }
 
 .col-6 p {
@@ -87,7 +93,7 @@ h3 {
 .feedback img{
   height: 200px;
 }
-.col-1{
+.col-3{
   grid-column: span 3;
   text-align: center;
   background: #fffefeb6;
@@ -98,8 +104,7 @@ h3 {
 
 .col-6{
   grid-column: span 6;
-  text-align: center;
-  height: 300px;
+  height: 320px;
 }
 
 .col-6:hover{
@@ -117,14 +122,16 @@ h3 {
   grid-template-columns: repeat(12, 1fr);
 }
 
-
-.col-6 h3{
-  margin-top: 30px;
+.four-g-upgrade img{
+  margin-top: 10px;
 }
-
 
 .mifi-col img{
   height: 150px;
+}
+
+.mifi-col h2{
+  margin-top: 10px;
 }
 
 .red-bg{
@@ -138,12 +145,12 @@ h3 {
 .hero-txt:hover{
   background: #fff;
 }
-
-/* tv on the go */
-#tv{
-  height: 171px;
-  width: 99px;
+.footer-col:hover{
+  background: #fff;
+  height: 200px;
 }
+
+
 .tv-on-go,
 .mini-wifi,
 .value-added {
@@ -155,6 +162,10 @@ h3 {
   grid-column: span 12;
   height: 150px;
   background: rgba(226, 227, 228, 0.102);
+}
+
+.mifi-col img{
+  margin-top: 10px;
 }
 
 .mini-wifi h3 {
@@ -180,6 +191,15 @@ footer{
   display: grid;
   grid-template-columns:  repeat(12, 1fr);
   margin: 40px;
+}
+
+.footer-col{
+  height: 200px;
+}
+
+.fab{
+  padding: 10px;
+  color: rgba(114, 111, 111, 0.623);
 }
 
 footer span{
@@ -241,30 +261,43 @@ footer span{
 }
 
 
-@media only screen and (max-width: 963px){
+@media only screen and (max-width: 992px){
+
+  .col-6{
+    margin-top: 50px;
+  }
+
   .col-6 img{
     grid-column: span 12;
   }
 
-  .col-1{
+  .col-3{
     grid-column: span 12;
     background: rgba(243, 241, 241, 0.637);
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
-  .col-2,
-  .col-5,
-  .col-4,
-  .col-6,
-  .col-7,
-  .col-left,
-  .col-right{
+  .col-6{
     grid-column: span 12;
+  }
+
+  .mifi-col img{
+    margin-top: 20px;
   }
 
   .col-2{
     grid-column: span 12;
+  }
+
+  .col-2 li{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .footer-col{
+    margin-top: 20px;
+    text-align: center;
   }
 
   .col-img img{
@@ -290,6 +323,11 @@ footer span{
     margin-right: 20px;
     color: red;
     float: right;
+  }
+
+  .fab{
+    padding: 10px;
+    color: rgba(114, 111, 111, 0.623);
   }
 
 }
