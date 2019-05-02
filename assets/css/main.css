@@ -41,12 +41,53 @@ nav a:hover {
 
 .hero{
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.col-img{
+  background: url(../images/home-banner.jpg) no-repeat center;
+}
+
+.col-12 {
+  grid-column: span 12;
+  text-align: center;
+  height: 150px;
+}
+
+.col-md-12 {
+  grid-column: span 12;
+  text-align: center;
+  height: 150px;
+  background: #fffefeb6;
+}
+
+.col-sm-12{
+  grid-column: span 12;
+  text-align: center;
+}
+
+.col-xs-12 {
+  grid-column: span 12;
+  text-align: center;
+  height: 150px;
+}
+
+.col-6{
+  grid-column: span 6;
+  text-align: center;
 }
 
 .col-md-6{
   grid-column: span 6;
   text-align: center;
 }
+
+.col-md-6{
+  grid-column: span 6;
+  height: 320px;
+  text-align: center;
+}
+
 .col-md-6 li{
   color: red;
   margin: 20px;
@@ -71,18 +112,24 @@ h3 {
   color: red;
 }
 
-.col-img{
-  grid-column: span 6;
-  grid-column-start: 8;
-  grid-column-end: 12;
-  text-align: center;
-}
-
 
 /* FEATURES */
 .features{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  background: rgba(245, 243, 243, 0.349);
+}
+
+.col-3{
+  grid-column: span 3;
+  text-align: center;
+  font-weight: bold;
+  height: 50px;
+  line-height: 3;
+}
+
+.col-sm-2{
+  grid-column: span 12;
 }
 
 .feedback{
@@ -93,24 +140,10 @@ h3 {
 .feedback img{
   height: 200px;
 }
-.col-md-3{
-  grid-column: span 3;
-  text-align: center;
-  background: #fffefeb6;
-  height: 80px;
-  line-height: 5;
-}
-
-
-.col-md-6{
-  grid-column: span 6;
-  height: 320px;
-}
 
 .col-md-6:hover{
   background: rgba(133, 135, 136, 0.102);
 }
-
 
 .col-md-6 h2 {
   color:#7c4d9e;
@@ -150,18 +183,11 @@ h3 {
   height: 200px;
 }
 
-
 .tv-on-go,
 .mini-wifi,
 .value-added {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-}
-.col-lg-12 {
-  text-align: center;
-  grid-column: span 12;
-  height: 150px;
-  background: rgba(226, 227, 228, 0.102);
 }
 
 .mifi-col img{
@@ -198,8 +224,9 @@ footer{
 }
 
 .fab{
-  padding: 10px;
+  padding: 5px;
   color: rgba(114, 111, 111, 0.623);
+  font-size: 24px;
 }
 
 footer span{
@@ -250,7 +277,19 @@ footer span{
 
 
 
+
+
+
+
 /* media queries */
+@media only screen and (max-width: 425px){
+  .col-img img{
+    height: 270px;
+    width: 320px;
+  }
+
+}
+
 @media only screen and (max-width: 768px){
 
   .footer-one,
@@ -264,6 +303,7 @@ footer span{
 @media only screen and (max-width: 992px){
 
   .col-md-6{
+    grid-column: span 6;
     margin-top: 50px;
   }
 
@@ -273,7 +313,6 @@ footer span{
 
   .col-md-3{
     grid-column: span 12;
-    background: rgba(243, 241, 241, 0.637);
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -298,10 +337,6 @@ footer span{
   .footer-col{
     margin-top: 20px;
     text-align: center;
-  }
-
-  .col-img img{
-    display: none;
   }
 
   nav{
@@ -331,6 +366,7 @@ footer span{
   }
 
 }
+
 
 @media only screen and (max-width: 1223px){
   nav li{
