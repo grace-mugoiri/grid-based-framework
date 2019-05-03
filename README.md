@@ -15,7 +15,7 @@ This project is entirely created using HTML and CSS.
 https://github.com/whiz25/css-framework/tree/develop
 
 # Github pages
-[Here](https://grace-mugoiri.github.io/grid-based-framework/)
+[Here](https://grace-mugoiri.github.io/grid-based-framework/index.html)
 
 # Authors
 @whiz25
